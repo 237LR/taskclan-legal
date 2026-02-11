@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HomeHero Support - Get help with the HomeHero app">
+    <title>Support - HomeHero</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .app-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .header p {
+            color: rgba(255,255,255,0.9);
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .contact-card h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card .email {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #667eea;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        .contact-card .email:hover {
+            text-decoration: underline;
+        }
+
+        .response-time {
+            background: #e8f5e9;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            border-left: 4px solid #4caf50;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .faq-item p {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        .faq-item ul {
+            margin-left: 1.5rem;
+            color: #555;
+        }
+
+        .faq-item ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        p, li {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: #764ba2;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        .tips-box {
+            background: #fff3cd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+
+        .steps {
+            background: #e3f2fd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 1rem 0;
+        }
+
+        .steps ol {
+            margin-left: 1.5rem;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="app-name">HomeHero</div>
+        <h1>Support Center</h1>
+        <p>We're here to help you make the most of HomeHero</p>
+    </div>
+
+    <div class="container">
+        <div class="contact-card">
+            <h2>Contact Support</h2>
+            <p>Need help? Have questions? We're here for you.</p>
+            <a href="mailto:karoljaworsky@gmail.com" class="email">karoljaworsky@gmail.com</a>
+
+            <div class="response-time">
+                <strong>Response Time:</strong> We typically respond within 24-48 hours during business days.
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Before You Contact Us</h2>
+            <p>To help us assist you more quickly, please check our Frequently Asked Questions below. If you still need help, please include the following information in your email:</p>
+            <ul>
+                <li>Your iOS version</li>
+                <li>Your device model (iPhone, iPad, etc.)</li>
+                <li>HomeHero app version (found in Settings)</li>
+                <li>A detailed description of the issue</li>
+                <li>Steps to reproduce the problem (if applicable)</li>
+                <li>Screenshots or screen recordings (if helpful)</li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I create a family group?</h3>
+                <p><strong>Answer:</strong> To create a family group:</p>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Open HomeHero and go to the Profile tab</li>
+                    <li>Tap "Family Sharing" or "Add Family Member"</li>
+                    <li>Enter the family member's name and choose an avatar</li>
+                    <li>Tap "Create" to add them to your family group</li>
+                </ol>
+                <p>Note: The free version supports up to 4 family members. Upgrade to Premium for unlimited family members.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I upgrade to Premium?</h3>
+                <p><strong>Answer:</strong> To upgrade to HomeHero Premium:</p>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Tap the Profile tab at the bottom</li>
+                    <li>Tap "Upgrade to Premium" or the crown icon</li>
+                    <li>Choose your preferred subscription plan (Monthly, Yearly, or Lifetime)</li>
+                    <li>Complete the purchase through the App Store</li>
+                </ol>
+                <p>All subscriptions include a 3-day free trial for new subscribers!</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I cancel my subscription?</h3>
+                <p><strong>Answer:</strong> Subscriptions are managed through your Apple ID:</p>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Open the Settings app on your device</li>
+                    <li>Tap your name at the top</li>
+                    <li>Tap "Subscriptions"</li>
+                    <li>Select HomeHero</li>
+                    <li>Tap "Cancel Subscription"</li>
+                </ol>
+                <p>You'll retain Premium access until the end of your current billing period.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I get a refund?</h3>
+                <p><strong>Answer:</strong> Refunds are handled by Apple:</p>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+                    <li>Sign in with your Apple ID</li>
+                    <li>Find your HomeHero purchase</li>
+                    <li>Click "Report a Problem"</li>
+                    <li>Select your reason and submit</li>
+                </ol>
+                <p>Refunds are granted at Apple's discretion, typically within 48 hours.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>My data isn't syncing across devices. What should I do?</h3>
+                <p><strong>Answer:</strong> If your data isn't syncing:</p>
+                <ul>
+                    <li>Make sure you're signed in with the same account on all devices</li>
+                    <li>Check that you have an active internet connection</li>
+                    <li>Verify that Cloud Sync is enabled in Settings</li>
+                    <li>Try force-closing the app and reopening it</li>
+                    <li>If using offline mode, data won't sync until you enable cloud sync</li>
+                </ul>
+                <p>If the problem persists, please contact support with your device and account details.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I use HomeHero without an internet connection?</h3>
+                <p><strong>Answer:</strong> Yes! HomeHero has a full offline mode. You can:</p>
+                <ul>
+                    <li>Create and complete tasks offline</li>
+                    <li>Track XP and streaks locally</li>
+                    <li>Manage family members (data stored on device only)</li>
+                </ul>
+                <p>When you reconnect to the internet, your data will sync automatically if Cloud Sync is enabled.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I restore my subscription on a new device?</h3>
+                <p><strong>Answer:</strong> To restore your subscription:</p>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Install HomeHero on your new device</li>
+                    <li>Sign in with the same Apple ID used for the original purchase</li>
+                    <li>Go to Profile → Premium</li>
+                    <li>Tap "Restore Purchases"</li>
+                </ol>
+                <p>Your subscription will be restored automatically at no charge.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do family challenges and duels work?</h3>
+                <p><strong>Answer:</strong> Family challenges and duels are fun competitions:</p>
+                <ul>
+                    <li><strong>Challenges:</strong> Family-wide goals where everyone works together</li>
+                    <li><strong>Duels:</strong> One-on-one competitions between family members</li>
+                    <li>Create them from the Home screen or Duels tab</li>
+                    <li>Set a goal, duration, and reward</li>
+                    <li>Track progress in real-time</li>
+                </ul>
+                <p>Premium subscribers can create unlimited challenges and duels!</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I share my Premium subscription with family?</h3>
+                <p><strong>Answer:</strong> Yes! HomeHero supports Apple Family Sharing:</p>
+                <ul>
+                    <li>Set up Family Sharing in your Apple ID settings</li>
+                    <li>Add up to 5 family members (6 total including you)</li>
+                    <li>All family members get Premium access with one subscription</li>
+                    <li>Each person uses their own Apple ID and HomeHero account</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I delete my account?</h3>
+                <p><strong>Answer:</strong> To delete your account and data:</p>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Email us at <a href="mailto:karoljaworsky@gmail.com">karoljaworsky@gmail.com</a></li>
+                    <li>Include "Delete Account" in the subject line</li>
+                    <li>Provide your account email or Apple ID</li>
+                    <li>We'll process your request within 7 business days</li>
+                </ol>
+                <p>Note: Account deletion is permanent and cannot be undone. All data will be deleted.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my child's data safe?</h3>
+                <p><strong>Answer:</strong> Yes. We are COPPA compliant and take children's privacy seriously:</p>
+                <ul>
+                    <li>Parents control all family member data</li>
+                    <li>We collect minimal information from child profiles</li>
+                    <li>No marketing or advertising to children</li>
+                    <li>Data is encrypted and securely stored</li>
+                    <li>You can delete any child's data at any time</li>
+                </ul>
+                <p>See our <a href="privacy-policy.html">Privacy Policy</a> for full details.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I sign in with Google or Apple?</h3>
+                <p><strong>Answer:</strong> To use social sign-in:</p>
+                <ol style="margin-left: 1.5rem;">
+                    <li>Open HomeHero</li>
+                    <li>On the login screen, tap "Sign in with Google" or "Sign in with Apple"</li>
+                    <li>Follow the prompts to authorize HomeHero</li>
+                    <li>Your account will be created or linked automatically</li>
+                </ol>
+                <p>This provides a secure, password-free way to access your account.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do streaks work?</h3>
+                <p><strong>Answer:</strong> Streaks track consecutive days of task completion:</p>
+                <ul>
+                    <li>Complete at least one task each day to maintain your streak</li>
+                    <li>Streaks reset if you miss a day</li>
+                    <li>Earn special badges for milestone streaks (7, 30, 100 days, etc.)</li>
+                    <li>View your streak in the Profile tab</li>
+                    <li>Family members have individual streaks</li>
+                </ul>
+            </div>
+
+            <h2>Common Issues and Solutions</h2>
+
+            <h3>App Crashes or Freezes</h3>
+            <div class="steps">
+                <p>Try these steps:</p>
+                <ol>
+                    <li>Force close the app and reopen it</li>
+                    <li>Restart your device</li>
+                    <li>Make sure you're running the latest version of HomeHero</li>
+                    <li>Update your iOS to the latest version</li>
+                    <li>Clear app cache (Settings → General → iPhone Storage → HomeHero)</li>
+                    <li>If problem persists, contact support with crash details</li>
+                </ol>
+            </div>
+
+            <h3>Tasks Not Saving</h3>
+            <div class="steps">
+                <p>If tasks aren't saving:</p>
+                <ol>
+                    <li>Check your internet connection (for cloud sync)</li>
+                    <li>Verify you have sufficient storage on your device</li>
+                    <li>Make sure the app has necessary permissions</li>
+                    <li>Try creating a task again</li>
+                    <li>Contact support if the issue continues</li>
+                </ol>
+            </div>
+
+            <h3>Login Problems</h3>
+            <div class="steps">
+                <p>If you can't log in:</p>
+                <ol>
+                    <li>Verify you're using the correct email/password</li>
+                    <li>Try resetting your password</li>
+                    <li>Check if you originally signed up with Google or Apple Sign-In</li>
+                    <li>Make sure you have an active internet connection</li>
+                    <li>Contact support if you're locked out</li>
+                </ol>
+            </div>
+
+            <h3>Premium Features Not Working</h3>
+            <div class="steps">
+                <p>If Premium features aren't available:</p>
+                <ol>
+                    <li>Verify your subscription is active in App Store settings</li>
+                    <li>Try tapping "Restore Purchases" in the app</li>
+                    <li>Sign out and sign back in</li>
+                    <li>Make sure you're using the same Apple ID that purchased the subscription</li>
+                    <li>Contact support with your receipt or order number</li>
+                </ol>
+            </div>
+
+            <h2>Feature Requests</h2>
+            <div class="tips-box">
+                <p><strong>Have an idea for a new feature?</strong></p>
+                <p>We love hearing from our users! Send your feature requests to <a href="mailto:karoljaworsky@gmail.com">karoljaworsky@gmail.com</a> with "Feature Request" in the subject line. While we can't implement every suggestion, we carefully consider all feedback when planning updates.</p>
+            </div>
+
+            <h2>Bug Reports</h2>
+            <p>Found a bug? Please report it to us:</p>
+            <ul>
+                <li>Email: <a href="mailto:karoljaworsky@gmail.com">karoljaworsky@gmail.com</a></li>
+                <li>Subject: "Bug Report - HomeHero"</li>
+                <li>Include: Device model, iOS version, app version, and steps to reproduce</li>
+                <li>Attach: Screenshots or screen recordings if possible</li>
+            </ul>
+            <p>We appreciate your help in making HomeHero better!</p>
+
+            <h2>System Requirements</h2>
+            <ul>
+                <li><strong>Minimum iOS:</strong> iOS 15.0 or later</li>
+                <li><strong>Recommended iOS:</strong> iOS 17.0 or later</li>
+                <li><strong>Devices:</strong> iPhone, iPad, iPod touch</li>
+                <li><strong>Storage:</strong> Approximately 50-100 MB</li>
+                <li><strong>Internet:</strong> Required for cloud sync and authentication (optional for offline use)</li>
+            </ul>
+
+            <h2>Privacy and Security</h2>
+            <p>For information about how we handle your data:</p>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a> - How we collect and use your data</li>
+                <li><a href="terms-of-service.html">Terms of Service</a> - Rules and guidelines</li>
+                <li><a href="subscription-terms.html">Subscription Terms</a> - Billing and subscription details</li>
+            </ul>
+
+            <h2>Still Need Help?</h2>
+            <div class="contact-card" style="margin-top: 2rem;">
+                <h2 style="margin-top: 0;">Get in Touch</h2>
+                <p>Can't find the answer you're looking for? We're here to help.</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:karoljaworsky@gmail.com" class="email" style="font-size: 1.1rem;">karoljaworsky@gmail.com</a>
+                </p>
+                <p><strong>Developer:</strong> Karol Jaworski</p>
+                <p><strong>App:</strong> HomeHero (com.ceanic.HomeHero)</p>
+
+                <div class="response-time">
+                    <strong>We typically respond within 24-48 hours.</strong>
+                    <br>For urgent subscription or billing issues, contact Apple Support directly.
+                </div>
+            </div>
+
+            <a href="index.html" class="back-link">← Back to Legal Hub</a>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 2rem; color: #888; font-size: 0.9rem;">
+        <p>&copy; 2026 Karol Jaworski. All rights reserved.</p>
+    </footer>
+</body>
+</html>

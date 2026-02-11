@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HomeHero Subscription Terms - Pricing, billing, and subscription management">
+    <title>Subscription Terms - HomeHero</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .app-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .last-updated {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .pricing-box {
+            background: #f8f9fa;
+            border: 2px solid #667eea;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+
+        .pricing-box h3 {
+            color: #667eea;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .price-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .price-card .plan-name {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-card .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin: 0.5rem 0;
+        }
+
+        .price-card .period {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .highlight-box {
+            background: #fff3cd;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1rem 0;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        p, li {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: #764ba2;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        .steps {
+            background: #e8f5e9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 1rem 0;
+        }
+
+        .steps ol {
+            margin-left: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="app-name">HomeHero</div>
+        <h1>Subscription Terms</h1>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> February 7, 2026<br>
+                <strong>Effective Date:</strong> February 7, 2026
+            </div>
+
+            <h2>Overview</h2>
+            <p>HomeHero offers premium features through various subscription plans and a one-time lifetime purchase option. These Subscription Terms govern your purchase and use of paid features within the App. By subscribing to HomeHero Premium, you agree to these terms.</p>
+
+            <div class="highlight-box">
+                <strong>Important:</strong> All subscriptions are processed through Apple's App Store. You must agree to Apple's payment terms and conditions.
+            </div>
+
+            <h2>Subscription Plans and Pricing</h2>
+
+            <div class="pricing-box">
+                <h3>Available Plans</h3>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <div class="plan-name">Monthly</div>
+                        <div class="price">$4.99</div>
+                        <div class="period">per month</div>
+                    </div>
+                    <div class="price-card">
+                        <div class="plan-name">Yearly</div>
+                        <div class="price">$39.99</div>
+                        <div class="period">per year</div>
+                    </div>
+                    <div class="price-card">
+                        <div class="plan-name">Yearly (Intro)</div>
+                        <div class="price">$19.99</div>
+                        <div class="period">first year only</div>
+                    </div>
+                    <div class="price-card">
+                        <div class="plan-name">Lifetime</div>
+                        <div class="price">$49.99</div>
+                        <div class="period">one-time payment</div>
+                    </div>
+                </div>
+            </div>
+
+            <p><strong>Note:</strong> Prices are in US Dollars (USD). Prices in other currencies may vary based on local App Store pricing. All prices are subject to applicable taxes.</p>
+
+            <h2>Free Trial</h2>
+            <p>HomeHero offers a <strong>3-day free trial</strong> for first-time subscribers to Monthly and Yearly plans.</p>
+
+            <h3>Trial Terms</h3>
+            <ul>
+                <li><strong>Duration:</strong> 3 days from the moment you subscribe</li>
+                <li><strong>Eligibility:</strong> Available only to new subscribers who have never subscribed to HomeHero Premium</li>
+                <li><strong>Full Access:</strong> During the trial, you have complete access to all premium features</li>
+                <li><strong>Cancellation:</strong> You can cancel anytime during the trial period without charge</li>
+                <li><strong>Auto-Renewal:</strong> If you do not cancel before the trial ends, you will be automatically charged and your paid subscription will begin</li>
+                <li><strong>One Trial Per User:</strong> The free trial is limited to one per Apple ID</li>
+            </ul>
+
+            <h3>Trial Start and End</h3>
+            <p>Your trial begins immediately when you subscribe. The exact end time is displayed in the subscription confirmation. To avoid charges, you must cancel at least 24 hours before the trial ends.</p>
+
+            <h2>Subscription Features</h2>
+            <p>HomeHero Premium includes:</p>
+            <ul>
+                <li><strong>Unlimited Family Members:</strong> Add unlimited users to your family group (free version limited to 4 members)</li>
+                <li><strong>Cloud Sync:</strong> Automatic synchronization across all your devices</li>
+                <li><strong>Family Sharing:</strong> Share tasks, challenges, and progress with family members</li>
+                <li><strong>Advanced Analytics:</strong> Detailed insights into task completion and family productivity</li>
+                <li><strong>Custom Rewards:</strong> Create unlimited custom rewards for family members</li>
+                <li><strong>Priority Support:</strong> Faster response to support inquiries</li>
+                <li><strong>Ad-Free Experience:</strong> No advertisements or promotional content</li>
+                <li><strong>Exclusive Features:</strong> Early access to new features and updates</li>
+            </ul>
+
+            <h2>Auto-Renewal</h2>
+            <p>All recurring subscriptions (Monthly and Yearly) automatically renew unless you cancel before the renewal date.</p>
+
+            <h3>How Auto-Renewal Works</h3>
+            <ul>
+                <li><strong>Automatic Billing:</strong> Your subscription will automatically renew at the end of each billing period</li>
+                <li><strong>Same Price:</strong> You will be charged the then-current subscription price (prices may change with notice)</li>
+                <li><strong>Apple Account:</strong> Charges are processed through your Apple ID account</li>
+                <li><strong>24-Hour Window:</strong> Your account will be charged within 24 hours before the current period ends</li>
+                <li><strong>Renewal Date:</strong> The renewal date is based on your original subscription date</li>
+            </ul>
+
+            <h3>Managing Auto-Renewal</h3>
+            <p>You can turn off auto-renewal at any time through your Apple ID account settings. Auto-renewal must be disabled at least 24 hours before the end of the current period to avoid being charged for the next period.</p>
+
+            <h2>Lifetime Purchase</h2>
+            <p>The Lifetime option is a one-time purchase that provides permanent access to HomeHero Premium features.</p>
+
+            <h3>Lifetime Terms</h3>
+            <ul>
+                <li><strong>One-Time Payment:</strong> $49.99 (USD) - no recurring charges</li>
+                <li><strong>Permanent Access:</strong> Access to all premium features for as long as the app exists</li>
+                <li><strong>All Devices:</strong> Valid across all devices logged in with your Apple ID</li>
+                <li><strong>No Expiration:</strong> Never expires, no renewal required</li>
+                <li><strong>Future Updates:</strong> Includes all future premium features at no additional cost</li>
+                <li><strong>Non-Transferable:</strong> Cannot be transferred to another Apple ID</li>
+            </ul>
+
+            <h2>Billing and Payment</h2>
+
+            <h3>Payment Processing</h3>
+            <p>All payments are processed through Apple's App Store using your Apple ID payment method. HomeHero does not directly process or store your payment information.</p>
+
+            <h3>Payment Methods</h3>
+            <p>You can use any payment method accepted by the Apple App Store, including:</p>
+            <ul>
+                <li>Credit or debit cards</li>
+                <li>Apple Pay</li>
+                <li>Apple ID balance</li>
+                <li>Carrier billing (where available)</li>
+            </ul>
+
+            <h3>Failed Payments</h3>
+            <p>If a payment fails:</p>
+            <ul>
+                <li>Apple will attempt to process the payment again</li>
+                <li>You may temporarily lose access to premium features</li>
+                <li>Your subscription may be canceled if payment cannot be processed</li>
+                <li>You are responsible for keeping your payment information current</li>
+            </ul>
+
+            <h2>Cancellation Policy</h2>
+
+            <h3>How to Cancel</h3>
+            <div class="steps">
+                <p><strong>To cancel your subscription:</strong></p>
+                <ol>
+                    <li>Open the <strong>Settings</strong> app on your iOS device</li>
+                    <li>Tap your name at the top</li>
+                    <li>Tap <strong>Subscriptions</strong></li>
+                    <li>Select <strong>HomeHero</strong></li>
+                    <li>Tap <strong>Cancel Subscription</strong></li>
+                </ol>
+            </div>
+
+            <p>Alternatively, you can manage subscriptions through the App Store app or iTunes on your computer.</p>
+
+            <h3>Cancellation Timing</h3>
+            <ul>
+                <li><strong>During Trial:</strong> Cancel anytime to avoid being charged</li>
+                <li><strong>Paid Subscription:</strong> Cancel at least 24 hours before renewal to avoid next billing cycle</li>
+                <li><strong>Access Continues:</strong> You retain access to premium features until the end of the current billing period</li>
+                <li><strong>No Partial Refunds:</strong> Cancellation does not provide a refund for the current period</li>
+            </ul>
+
+            <h3>After Cancellation</h3>
+            <p>When your subscription ends:</p>
+            <ul>
+                <li>You will lose access to premium features</li>
+                <li>Your data will be retained for 90 days in case you resubscribe</li>
+                <li>You can continue using the free version of HomeHero</li>
+                <li>Family members beyond the free limit will need to be removed</li>
+            </ul>
+
+            <h2>Refund Policy</h2>
+
+            <h3>Apple's Refund Policy</h3>
+            <p>All purchases are processed through Apple's App Store and are subject to Apple's refund policies. HomeHero does not directly process refunds.</p>
+
+            <h3>Requesting a Refund</h3>
+            <div class="steps">
+                <p><strong>To request a refund from Apple:</strong></p>
+                <ol>
+                    <li>Visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+                    <li>Sign in with your Apple ID</li>
+                    <li>Find your HomeHero purchase</li>
+                    <li>Click "Report a Problem"</li>
+                    <li>Select your reason and submit</li>
+                </ol>
+            </div>
+
+            <h3>Refund Eligibility</h3>
+            <p>Refunds are granted at Apple's sole discretion. Common reasons for refund requests include:</p>
+            <ul>
+                <li>Accidental purchase</li>
+                <li>Technical issues preventing use</li>
+                <li>Unauthorized purchase</li>
+                <li>App not as described</li>
+            </ul>
+
+            <p><strong>Note:</strong> Refund requests are typically most successful if made within 14 days of purchase.</p>
+
+            <h2>Price Changes</h2>
+            <p>We reserve the right to change subscription prices at any time. Price changes will affect new subscribers immediately and existing subscribers at their next renewal.</p>
+
+            <h3>Notice of Price Changes</h3>
+            <ul>
+                <li>We will notify you of significant price increases via email or in-app notification</li>
+                <li>For existing subscribers, price changes take effect at the next renewal period</li>
+                <li>You will have the opportunity to cancel before the price increase takes effect</li>
+                <li>Continuing your subscription after notice of a price change constitutes acceptance</li>
+            </ul>
+
+            <h2>Family Sharing</h2>
+            <p>HomeHero Premium subscriptions support Apple's Family Sharing feature, allowing you to share your subscription with family members.</p>
+
+            <h3>Family Sharing Terms</h3>
+            <ul>
+                <li><strong>Up to 6 People:</strong> Share with up to 5 additional family members (6 total)</li>
+                <li><strong>Same Benefits:</strong> All family members get full premium access</li>
+                <li><strong>Organizer Pays:</strong> The family organizer's payment method is charged</li>
+                <li><strong>One Subscription:</strong> Only one subscription needed for the entire family group</li>
+                <li><strong>Separate Accounts:</strong> Each family member uses their own Apple ID and HomeHero account</li>
+                <li><strong>Lifetime Eligible:</strong> Lifetime purchases can also be shared</li>
+            </ul>
+
+            <h3>Setting Up Family Sharing</h3>
+            <p>Family Sharing must be configured through your Apple ID settings. Visit Apple's support site for instructions on setting up Family Sharing.</p>
+
+            <h2>Geographic Availability</h2>
+            <p>HomeHero subscriptions are available worldwide wherever the Apple App Store operates. Prices may vary by country and are displayed in your local currency in the App Store.</p>
+
+            <h2>Taxes</h2>
+            <p>Subscription prices do not include applicable taxes. Taxes are calculated and charged by Apple based on your billing address and local tax laws.</p>
+
+            <h2>Subscription Transfer</h2>
+            <p>Subscriptions are tied to your Apple ID and cannot be transferred to another Apple ID. If you change devices but use the same Apple ID, your subscription will remain active.</p>
+
+            <h2>Restoration of Purchases</h2>
+            <p>If you reinstall HomeHero or install it on a new device with the same Apple ID, you can restore your subscription at no charge. Use the "Restore Purchases" option in the app.</p>
+
+            <h2>Service Interruptions</h2>
+            <p>While we strive for 99.9% uptime, we do not guarantee uninterrupted access to premium features. We are not liable for temporary service interruptions, but we will work to resolve issues promptly.</p>
+
+            <h2>Changes to Features</h2>
+            <p>We may add, modify, or remove premium features at any time. We will make reasonable efforts to notify subscribers of significant changes to features included in their subscription.</p>
+
+            <h2>Account Termination</h2>
+            <p>We reserve the right to terminate your subscription and access to premium features if you:</p>
+            <ul>
+                <li>Violate these Subscription Terms or our Terms of Service</li>
+                <li>Engage in fraudulent activity</li>
+                <li>Abuse or exploit the service</li>
+                <li>Share your account with non-family members</li>
+            </ul>
+
+            <p>Terminated accounts are not eligible for refunds.</p>
+
+            <h2>Third-Party Services</h2>
+            <p>Subscription management uses RevenueCat for subscription analytics and cross-platform support. RevenueCat's privacy policy and terms apply to their services.</p>
+
+            <h2>Changes to These Terms</h2>
+            <p>We may update these Subscription Terms from time to time. We will notify you of material changes via email or in-app notification. Your continued use of premium features after changes take effect constitutes acceptance of the new terms.</p>
+
+            <h2>Contact for Billing Issues</h2>
+            <div class="contact">
+                <p>For billing issues, subscription questions, or technical support:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:karoljaworsky@gmail.com">karoljaworsky@gmail.com</a><br>
+                    <strong>Developer:</strong> Karol Jaworski<br>
+                    <strong>Response Time:</strong> Within 48 hours
+                </p>
+                <p>For payment and refund issues, please contact Apple Support directly as they process all payments.</p>
+            </div>
+
+            <h2>Apple Support</h2>
+            <div class="contact" style="background: #e3f2fd;">
+                <p><strong>For payment, billing, and refund issues, contact Apple:</strong></p>
+                <p>
+                    <strong>Apple Support:</strong> <a href="https://support.apple.com" target="_blank">https://support.apple.com</a><br>
+                    <strong>Report a Problem:</strong> <a href="https://reportaproblem.apple.com" target="_blank">https://reportaproblem.apple.com</a><br>
+                    <strong>Manage Subscriptions:</strong> Settings → [Your Name] → Subscriptions
+                </p>
+            </div>
+
+            <a href="index.html" class="back-link">← Back to Legal Hub</a>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 2rem; color: #888; font-size: 0.9rem;">
+        <p>&copy; 2026 Karol Jaworski. All rights reserved.</p>
+    </footer>
+</body>
+</html>

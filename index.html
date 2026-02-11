@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HomeHero Legal Hub - Privacy Policy, Terms of Service, Support, and Legal Documents">
+    <meta name="keywords" content="HomeHero, privacy policy, terms of service, legal, support">
+    <title>Legal Hub - HomeHero</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+            color: white;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 0.25rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem 2rem;
+        }
+
+        .intro-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .intro-card h1 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .intro-card p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .legal-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .legal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        }
+
+        .legal-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .legal-card h2 {
+            color: #667eea;
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+        }
+
+        .legal-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .legal-card .arrow {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            text-align: right;
+        }
+
+        .info-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-bottom: 2rem;
+        }
+
+        .info-section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .info-section p {
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .info-item strong {
+            color: #333;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-item span {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .contact-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section a {
+            color: #667eea;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: white;
+            opacity: 0.9;
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            .app-name {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+
+            .legal-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-card h1 {
+                font-size: 1.5rem;
+            }
+
+            .intro-card p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🏠🦸</div>
+        <div class="app-name">HomeHero</div>
+        <div class="tagline">Transform Chores into Adventures</div>
+        <div class="subtitle">Legal Information & Support Center</div>
+    </div>
+
+    <div class="container">
+        <div class="intro-card">
+            <h1>Welcome to the HomeHero Legal Hub</h1>
+            <p>Your one-stop destination for all legal documents, policies, and support resources. We believe in transparency and are committed to protecting your privacy and providing excellent service.</p>
+        </div>
+
+        <div class="legal-grid">
+            <a href="privacy-policy.html" class="legal-card">
+                <div class="icon">🔒</div>
+                <h2>Privacy Policy</h2>
+                <p>Learn how we collect, use, and protect your data. Includes COPPA compliance for children's privacy and details about our third-party services.</p>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="terms-of-service.html" class="legal-card">
+                <div class="icon">📋</div>
+                <h2>Terms of Service</h2>
+                <p>The rules and guidelines for using HomeHero. Covers acceptable use, account management, liability, and dispute resolution.</p>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="eula.html" class="legal-card">
+                <div class="icon">📜</div>
+                <h2>End User License Agreement</h2>
+                <p>HomeHero uses Apple's standard EULA. Learn about your license to use the app and related terms and restrictions.</p>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="subscription-terms.html" class="legal-card">
+                <div class="icon">💳</div>
+                <h2>Subscription Terms</h2>
+                <p>Everything about subscriptions: pricing, billing cycles, free trials, auto-renewal, cancellation, and refund policies.</p>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="copyright.html" class="legal-card">
+                <div class="icon">©️</div>
+                <h2>Copyright Notice</h2>
+                <p>Intellectual property information for HomeHero. All content is copyrighted and protected by law. Learn about usage rights.</p>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="support.html" class="legal-card">
+                <div class="icon">💬</div>
+                <h2>Support & FAQ</h2>
+                <p>Get help with HomeHero. Frequently asked questions, troubleshooting guides, and contact information for customer support.</p>
+                <div class="arrow">→</div>
+            </a>
+        </div>
+
+        <div class="info-section">
+            <h2>App Information</h2>
+            <p>HomeHero is a family task management app designed to make household chores fun and rewarding for everyone.</p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Developer</strong>
+                    <span>Karol Jaworski</span>
+                </div>
+                <div class="info-item">
+                    <strong>Bundle ID</strong>
+                    <span>com.ceanic.HomeHero</span>
+                </div>
+                <div class="info-item">
+                    <strong>Last Updated</strong>
+                    <span>February 7, 2026</span>
+                </div>
+                <div class="info-item">
+                    <strong>Platform</strong>
+                    <span>iOS (iPhone & iPad)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Key Features</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>🏠 Task Management</strong>
+                    <span>Create and assign household tasks to family members</span>
+                </div>
+                <div class="info-item">
+                    <strong>⚡ XP & Streaks</strong>
+                    <span>Earn experience points and maintain daily streaks</span>
+                </div>
+                <div class="info-item">
+                    <strong>👨‍👩‍👧‍👦 Family Sharing</strong>
+                    <span>Share progress and compete with family members</span>
+                </div>
+                <div class="info-item">
+                    <strong>🏆 Rewards System</strong>
+                    <span>Unlock achievements and earn custom rewards</span>
+                </div>
+                <div class="info-item">
+                    <strong>⚔️ Duels & Challenges</strong>
+                    <span>Friendly competitions to motivate productivity</span>
+                </div>
+                <div class="info-item">
+                    <strong>☁️ Cloud Sync</strong>
+                    <span>Sync data across all your devices</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Subscription Plans</h2>
+            <p>Choose the plan that works best for your family:</p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Monthly</strong>
+                    <span>$4.99/month with 3-day free trial</span>
+                </div>
+                <div class="info-item">
+                    <strong>Yearly</strong>
+                    <span>$39.99/year with 3-day free trial</span>
+                </div>
+                <div class="info-item">
+                    <strong>Yearly (Intro)</strong>
+                    <span>$19.99 first year only</span>
+                </div>
+                <div class="info-item">
+                    <strong>Lifetime</strong>
+                    <span>$49.99 one-time payment</span>
+                </div>
+            </div>
+
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                All subscriptions include unlimited family members, cloud sync, advanced analytics, and priority support. See <a href="subscription-terms.html" style="color: #667eea; text-decoration: none;">Subscription Terms</a> for details.
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>Data & Privacy</h2>
+            <p>We take your privacy seriously. Here's what you should know:</p>
+            <ul style="color: #555; margin-left: 1.5rem; margin-top: 1rem;">
+                <li>COPPA compliant for children's data (ages 6-16)</li>
+                <li>Optional offline mode - no data transmitted</li>
+                <li>Encrypted cloud storage via Supabase</li>
+                <li>Google Sign-In and Apple Sign-In supported</li>
+                <li>Minimal data collection - only what's necessary</li>
+                <li>You control your data - delete anytime</li>
+                <li>No selling of personal information</li>
+                <li>Transparent about third-party services</li>
+            </ul>
+            <p style="margin-top: 1rem;">
+                Read our full <a href="privacy-policy.html" style="color: #667eea; text-decoration: none; font-weight: 600;">Privacy Policy</a> for complete details.
+            </p>
+        </div>
+
+        <div class="contact-section">
+            <h2>Need Help?</h2>
+            <p style="color: #555; margin-bottom: 1.5rem;">We're here to answer your questions and provide support.</p>
+            <p>
+                <strong>Email:</strong><br>
+                <a href="mailto:karoljaworsky@gmail.com">karoljaworsky@gmail.com</a>
+            </p>
+            <p style="margin-top: 1.5rem; color: #666; font-size: 0.95rem;">
+                Response time: 24-48 hours<br>
+                Check our <a href="support.html" style="color: #667eea; text-decoration: none;">Support Page</a> for FAQs
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Karol Jaworski. All rights reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy</a> •
+            <a href="terms-of-service.html">Terms</a> •
+            <a href="support.html">Support</a>
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            HomeHero™ is a trademark of Karol Jaworski
+        </p>
+    </div>
+</body>
+</html>
